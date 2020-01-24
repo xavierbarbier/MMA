@@ -1,0 +1,22 @@
+library(ggplot2)
+
+library(readr)
+EBD <- read_csv("EBD.csv")
+View(EBD)
+
+head(EBD)
+
+
+
+ggplot(EBD, aes(x=Durée)) + geom_histogram(binwidth = 100) + theme_classic() + ggtitle ("EBD - Fin du combat")
+
+ggplot(data=EBD, aes( y = Durée)) +  geom_boxplot()+ theme_classic() + ggtitle("EBD - Durée du combat")
+quantile(EBD$Durée)
+IQR(EBD$Durée)
+
+ggplot(data=EBD, aes(x = CATEGORIE, y = Durée)) +  geom_boxplot(aes(fill=CATEGORIE))+ theme_classic() + ggtitle("Durée du combat selon catégorie")+coord_flip()  +
+  xlab("M/F:Catégorie(lbs)") + ylab("Durée (min:sec)") + geom_jitter(shape=2, position=position_jitter(0.2)) + theme(legend.text = element_text(size = 13),
+                                                                                                                     strip.text.x = element_text(size = 15, face = "bold"),
+                                                                                                                     axis.title.y = element_text(color="black", size = 15, vjust=1.5),
+                                                                                                                     axis.title.x = element_text(color="black", size = 15),
+                                                                                                                     axis.line.y = element_line(colour = "black")) 
