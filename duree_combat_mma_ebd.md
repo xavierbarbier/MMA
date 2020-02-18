@@ -1,51 +1,24 @@
 Durée du combat au MMA
 ================
 
-## Installation
-
 Exemple avec l’European Beatdown
 
 Xavier Barbier - Twitter : @xavbarbier
 
 Février 2020
 
+## 1\) Question d’intérêt / énoncé du problème
+
+1)  Quelle est la durée du combat en MMA ?
+
+NOTES :
+
+A l’UFC il semble la durée effective de combat ne soit pas la même selon
+la catégorie Les catégories de poids légères semblent avoir une durée de
+combat plus longue que les catégories de poids plus lourdes
+
 ``` r
 # import des packages
-install.packages("ggplot2")
-```
-
-    ## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.6'
-    ## (as 'lib' is unspecified)
-
-``` r
-install.packages("readr")
-```
-
-    ## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.6'
-    ## (as 'lib' is unspecified)
-
-``` r
-install.packages("ggpubr")
-```
-
-    ## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.6'
-    ## (as 'lib' is unspecified)
-
-``` r
-install.packages("lubridate")
-```
-
-    ## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.6'
-    ## (as 'lib' is unspecified)
-
-``` r
-install.packages("rmarkdown")
-```
-
-    ## Installing package into '/home/rstudio-user/R/x86_64-pc-linux-gnu-library/3.6'
-    ## (as 'lib' is unspecified)
-
-``` r
 library(ggplot2)
 library(readr)
 library(ggpubr)
@@ -67,16 +40,6 @@ library(lubridate)
 ``` r
 library(rmarkdown)
 ```
-
-## 1\) Question d’intérêt / énoncé du problème
-
-1)  Quelle est la durée du combat en MMA ?
-
-NOTES :
-
-A l’UFC il semble la durée effective de combat ne soit pas la même selon
-la catégorie Les catégories de poids légères semblent avoir une durée de
-combat plus longue que les catégories de poids plus lourdes
 
 ## 2\) Les données
 
