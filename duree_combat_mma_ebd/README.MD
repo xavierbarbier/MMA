@@ -12,8 +12,17 @@ Par exemple, au football un niveau de jeu plus élevé n’est pas nécessaireme
 ## La question qu’un entraîneur est en droit de se poser est donc : 
 * la durée type d’un combat de MMA est elle la même, peu importe le niveau ?
 
-## Données
+## Code and Resources Used
+
+## Web Scraping
+
+## Data Cleaning
+
+## Analyse descriptive
+
+## Données et ressources
 * Données de l’European BeatDown (EBD), sur 6 événements,obtenues grâce au site Tapology.
-* Code en R.
+* Code en R
+
 
 [ en construction...]
